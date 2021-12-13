@@ -1,9 +1,18 @@
+
+
 html {
     font-family: "Raleway", "Helvetica", sans-serif;
     font-weight: 400;
     color: #2F3442;
-    height: 100%;
     background-color: #FFFFFF;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+    
 }
 
 .icon {color: #BCD2DA;}
@@ -16,6 +25,8 @@ html {
     border-radius: 4px;
     overflow: hidden;
     text-align: center;
+    width: 300px;
+    height: 300px;
 }
 
 .card__description {
@@ -54,7 +65,8 @@ html {
     overflow: hidden;
     display: flex;
     max-width: 710px;
-    transition: width 1sg;
+    margin: 0px;
+    
   }
   
     .cardGroup__card {
@@ -63,14 +75,19 @@ html {
       border: none;
       border-radius: 0;
       flex-basis: 500px;
+      max-width: 710px;
     }
   
     .cardGroup__card {
       border-left: 1px solid #D7DBDD;
+      max-width: 710px;
 
     }
   
     .cardGroup__cardDescription {
       /* flex-grow, flex-shrink, flex-basis */
       flex-grow: 6;
+      align-items: center;
+      justify-content: center;
+
     }
